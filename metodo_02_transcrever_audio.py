@@ -26,8 +26,8 @@ def embaralhar_e_transcrever(caminho_audio_base, pergunta):
 
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     nome_base = pergunta.replace(" ", "_").replace("?", "").replace("!", "")
-    nome_arquivo_audio = f"audios_embaralhados/{nome_base}_{timestamp}.wav"
-    nome_arquivo_texto = f"transcricoes/{nome_base}_{timestamp}.txt"
+    nome_arquivo_audio = f"audios_embaralhados/metodo_02_{nome_base}_{timestamp}.wav"
+    nome_arquivo_texto = f"transcricoes/metodo_02_{nome_base}_{timestamp}.txt"
 
     os.makedirs("audios_embaralhados", exist_ok=True)
     os.makedirs("transcricoes", exist_ok=True)
